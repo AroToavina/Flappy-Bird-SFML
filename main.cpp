@@ -116,11 +116,11 @@ int main() {
     }
 
     Sprite birdSprite(bird);
-    birdSprite.setScale(0.2f, 0.2f);
+    birdSprite.setScale(0.2, 0.2);
 
     Sprite backgroundSprite(background);
     Sprite heartSprite(heart);
-    heartSprite.setScale(0.05f, 0.05f);
+    heartSprite.setScale(0.05, 0.05);
 
     stringstream str_score;
     str_score << score;
@@ -156,7 +156,7 @@ int main() {
     vector<Pipe> pipes;
     const float pipeGap = 200;
     const float pipeSpeed = 200;
-    const float spawnInterval = 1.5f;
+    const float spawnInterval = 1.5;
     float spawnTimer = 0;
 
     GameState gameState = StartScreen;
